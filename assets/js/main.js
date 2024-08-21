@@ -120,7 +120,7 @@
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 20000, // 1 minute
+      delay: 10000, 
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -146,7 +146,7 @@
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 20000, // 1 minute
+      delay: 10000, // 1 minute
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -172,7 +172,7 @@
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 20000, // 1 minute
+      delay: 10000, // 1 minute
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -188,7 +188,7 @@
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 20000, // 1 minute
+      delay: 10000, // 1 minute
       disableOnInteraction: false
     },
     pagination: {
