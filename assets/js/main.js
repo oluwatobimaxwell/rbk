@@ -182,7 +182,7 @@
       clickable: true
     }
   });
-  stopAutoplayOnOppositeSwipe(testimonialCarousel);
+ );
   
   const propertySingleCarousel = new Swiper('#property-single-carousel', {
     speed: 600,
