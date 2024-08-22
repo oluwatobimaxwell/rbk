@@ -1337,17 +1337,18 @@ a:hover {
   color: #ffffff;
   margin-bottom: 0;
   padding-bottom: 0.7rem;
+  font-size: 1.0rem; /* Default font size */
 }
 
 @media (min-width: 768px) {
   .card-header-a .card-title-a {
-    font-size: 1.3rem;
+    font-size: 1.0rem; /* Slightly larger for medium screens */
   }
 }
 
 @media (min-width: 992px) {
   .card-header-a .card-title-a {
-    font-size: 2rem;
+    font-size: 1.0rem; /* Slightly larger for large screens */
   }
 }
 
