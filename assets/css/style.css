@@ -1051,14 +1051,14 @@ a:hover {
 }
 .intro .intro-title-top {
   margin-bottom: 1rem;
-  font-size: 0.9rem;
+  font-size: 1.9rem;
   color: #ffffff;
   letter-spacing: 0.05em;
 }
 
 @media (min-width: 768px) {
   .intro .intro-title-top {
-    font-size: 0.9rem;
+    font-size: 1.9rem;
     margin-bottom: 1rem;
   }
 }
