@@ -1,3 +1,4 @@
+
 (function() {
   "use strict";
 
@@ -95,32 +96,29 @@
   /**
    * Intro Carousel
    */
-  function stopAutoplayOnOppositeSwipe(swiper) {
-    let startX;
-  
-    // Listen for the start of the touch event
-    swiper.el.addEventListener('touchstart', (e) => {
-      startX = e.touches[0].clientX;
-    });
-  
-    // Listen for the end of the touch event
-    swiper.el.addEventListener('touchend', (e) => {
-      let endX = e.changedTouches[0].clientX;
-      let diffX = startX - endX;
-  
-      // Determine if the swipe is opposite to the current direction
-      if ((diffX > 0 && swiper.swipeDirection === 'prev') || (diffX < 0 && swiper.swipeDirection === 'next')) {
-        swiper.autoplay.stop();
-      }
-    });
-  }
-  
-  // Apply to all your carousels
-  const propertyCarousel = new Swiper('#property-carousel', {
+  new Swiper('.intro-carousel', {
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 10000, 
+      delay: 2000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+
+  /**
+   * Property carousel
+   */
+  new Swiper('#property-carousel', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -134,19 +132,22 @@
         slidesPerView: 1,
         spaceBetween: 20
       },
+
       1200: {
         slidesPerView: 3,
         spaceBetween: 20
       }
     }
   });
-  stopAutoplayOnOppositeSwipe(propertyCarousel);
-  
-  const newsCarousel = new Swiper('#news-carousel', {
+
+  /**
+   * News carousel
+   */
+  new Swiper('#news-carousel', {
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 10000, // 1 minute
+      delay: 5000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -160,19 +161,22 @@
         slidesPerView: 1,
         spaceBetween: 20
       },
+
       1200: {
         slidesPerView: 3,
         spaceBetween: 20
       }
     }
   });
-  stopAutoplayOnOppositeSwipe(newsCarousel);
-  
-  const testimonialCarousel = new Swiper('#testimonial-carousel', {
+
+  /**
+   * Testimonial carousel
+   */
+  new Swiper('#testimonial-carousel', {
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 10000, // 1 minute
+      delay: 5000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -182,13 +186,15 @@
       clickable: true
     }
   });
- );
-  
-  const propertySingleCarousel = new Swiper('#property-single-carousel', {
+
+  /**
+   * Property Single carousel
+   */
+  new Swiper('#property-single-carousel', {
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 10000, // 1 minute
+      delay: 5000,
       disableOnInteraction: false
     },
     pagination: {
@@ -197,7 +203,5 @@
       clickable: true
     }
   });
-  stopAutoplayOnOppositeSwipe(propertySingleCarousel);
-  
 
 })()
