@@ -582,6 +582,21 @@ a:hover {
     transform: rotate(360deg);
   }
 }
+.book-now-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff8f; /* Button color */
+  color: #fff; /* Text color */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
 
 /*======================================
 //--//-->   BUTTON
@@ -593,7 +608,7 @@ a:hover {
 .btn.btn-a,
 .btn.btn-b {
   border-radius: 0;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   letter-spacing: 0.05rem;
 }
 
