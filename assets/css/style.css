@@ -1377,7 +1377,27 @@ a:hover {
   color: #ffffff;
   text-decoration: none;
 }
+.navbar .navbar-brand {
+  flex: 1; /* Allow the logo to take available space */
+  display: flex;
+  justify-content: center; /* Center the logo horizontally within the available space */
+  margin-right: 40px; /* Adjust this value to move the logo to the left */
+}
+.navbar {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
 
+.navbar .navbar-brand {
+  margin-right: 20px; /* Adjust spacing between logo and nav items if needed */
+}
+
+
+
+
+.navbar .call-room {
+  margin-left: 20px; /* Adjust spacing between nav items and call button if needed */
+}
 
 
 .card-body-a {
