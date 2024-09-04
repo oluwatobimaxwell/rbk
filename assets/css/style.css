@@ -94,8 +94,21 @@ a:hover {
 
 @media (min-width: 992px) {
   .link-a span {
-    font-size: 18px;
+    font-size: 20px;
   }
+}
+.link-a {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Ensure text is centered */
+  height: 100%; /* Ensure the card header takes up the full height of the card */
+  
+}
+
+.link-a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .text-brand {
@@ -767,7 +780,7 @@ a:hover {
 
 .navbar-default .dropdown .dropdown-menu {
   border-top: 0;
-  border-left: 4px solid #208bff;
+  border-left: 4px solid #20ff6a;
   border-right: 0;
   border-bottom: 0;
   transform: translate3d(0px, 40px, 0px);
@@ -1295,7 +1308,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .card-box-a:hover .card-body-a {
-    padding-bottom: 1rem;
+    padding-bottom: rem;
   }
 }
 
@@ -1305,7 +1318,7 @@ a:hover {
   }
 
   .card-box-a .card-body-a {
-    padding-bottom: 1rem;
+    padding-bottom: rem;
   }
 }
 
@@ -1336,8 +1349,8 @@ a:hover {
 .card-header-a .card-title-a {
   color: #ffffff;
   margin-bottom: 0;
-  padding-bottom: 0.7rem;
-  font-size: 1.0rem; /* Default font size */
+  padding-bottom: 5rem;
+  font-size: 1.3rem; /* Default font size */
 }
 
 @media (min-width: 768px) {
@@ -1352,10 +1365,20 @@ a:hover {
   }
 }
 
+.card-header-a {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Ensure text is centered */
+  height: 100%; /* Ensure the card header takes up the full height of the card */
+}
+
 .card-header-a .card-title-a a {
   color: #ffffff;
   text-decoration: none;
 }
+
+
 
 .card-body-a {
   z-index: 2;
@@ -1364,7 +1387,7 @@ a:hover {
 }
 
 .card-body-a .price-box {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.rem;
 }
 
 .price-a {
