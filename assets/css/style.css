@@ -658,8 +658,8 @@ a:hover {
 .navbar-default {
   transition: all 0.5s ease-in-out;
   background-color: #ffffff;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
@@ -667,7 +667,7 @@ a:hover {
 
 .navbar-default .nav-search {
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .navbar-default.navbar-reduce {
