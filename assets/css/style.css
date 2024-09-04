@@ -640,6 +640,17 @@ a:hover {
 .navbar-toggle-box i {
   line-height: 0;
 }
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Ensures the logo is aligned to the left */
+}
+
+.navbar-brand img {
+  width: 70px;
+  height: 50px;
+  border-radius: 5px;
+}
 
 /*--------------------------------------------------------------
 # Navbar
@@ -647,8 +658,8 @@ a:hover {
 .navbar-default {
   transition: all 0.5s ease-in-out;
   background-color: #ffffff;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
@@ -701,10 +712,10 @@ a:hover {
 .navbar-default.navbar-reduce .nav-link:before {
   content: "";
   position: absolute;
-  bottom: 5px;
+  bottom: 3px;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 1px;
   z-index: 0;
   background-color: #208bff;
   transform: scaleX(0);
@@ -735,7 +746,7 @@ a:hover {
 }
 
 .navbar-default.navbar-trans .nav-link:before {
-  background-color: #208bff;
+  background-color: #0e0f0f;
 }
 
 .navbar-default.navbar-trans .nav-link:hover {
@@ -751,8 +762,8 @@ a:hover {
 
 .navbar-default.navbar-reduce {
   transition: all 0.5s ease-in-out;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .navbar-default.navbar-reduce .nav-link {
@@ -780,7 +791,7 @@ a:hover {
 
 .navbar-default .dropdown .dropdown-menu {
   border-top: 0;
-  border-left: 4px solid #20ff6a;
+  border-left: 4px solid #000000;
   border-right: 0;
   border-bottom: 0;
   transform: translate3d(0px, 40px, 0px);
@@ -1318,7 +1329,7 @@ a:hover {
   }
 
   .card-box-a .card-body-a {
-    padding-bottom: rem;
+    padding-bottom: 1rem;
   }
 }
 
