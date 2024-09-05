@@ -228,19 +228,6 @@
         </div>
       </div>
     </section>
-
-    <style>
-      @keyframes blink {
-          0% { color: #208bff; }
-          50% { color: rgb(255, 255, 255); }
-          100% { color: #208bff; }
-      }
-      .link-a {
-          animation: blink 0.8s infinite;
-          text-decoration: none;
-      }
-    </style>
-
     <div id="property-carousel" class="swiper">
       <div class="swiper-wrapper">
         <!-- First carousel item -->
@@ -353,62 +340,62 @@
     </div>
     <body>
 
+     
       <div class="table-title">Room rates per student/trimester for Baze students - Male</div>
       <div class="table-titli">Trimester is 3 to 3.5 months</div>
-    <table>
-    <thead>
-      <tr>
-          <th>ROOM TYPES</th>
-          <th>FULL OPTION</th>
-          <th>WITHOUT DINNER & LAUNDRY</th>
-          <th>ACCOMMODATION & SHUTTLE</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-          <td data-label="ROOM TYPES">Room of 2</td>
-          <td data-label="FULL OPTION">900K</td>
-          <td data-label="WITHOUT DINNER & LAUNDRY">800K</td>
-          <td data-label="ACCOMMODATION & SHUTTLE">700K</td>
-      </tr>
-      <tr>
-          <td data-label="ROOM TYPES">Room of 1</td>
-          <td data-label="FULL OPTION">1.05M</td>
-          <td data-label="WITHOUT DINNER & LAUNDRY">950K</td>
-          <td data-label="ACCOMMODATION & SHUTTLE">850K</td>
-      </tr>
-      <tr>
-          <td data-label="ROOM TYPES">Room of 1 with private balcony</td>
-          <td data-label="FULL OPTION">1.1M</td>
-          <td data-label="WITHOUT DINNER & LAUNDRY">1M</td>
-          <td data-label="ACCOMMODATION & SHUTTLE">900K</td>
-      </tr>
-      <tr>
-          <td data-label="ROOM TYPES">Room of 2 with private kitchen</td>
-          <td data-label="FULL OPTION">1.0M</td>
-          <td data-label="WITHOUT DINNER & LAUNDRY">900K</td>
-          <td data-label="ACCOMMODATION & SHUTTLE">800K</td>
-      </tr>
-      <tr>
-          <td data-label="ROOM TYPES">Room of 1 with private kitchen</td>
-          <td data-label="FULL OPTION">1.3M</td>
-          <td data-label="WITHOUT DINNER & LAUNDRY">1.2M</td>
-          <td data-label="ACCOMMODATION & SHUTTLE">1.1M</td>
-      </tr>
-    </tbody>
-    </table>
-    
-    <div class="table-title">Room rates per student/semester for Nile students - Male</div>
-    <div class="table-titli">Semester is 4 to 4.5 months</div>
-    <table>
-    <thead>
-      <tr>
-          <th>ROOM TYPES</th>
-          <th>FULL OPTION</th>
-          <th>WITHOUT DINNER & LAUNDRY</th>
-          <th>ACCOMMODATION & SHUTTLE</th>
-      </tr>
-    </thead>
+      <table>
+        <thead>
+          <tr>
+            <th class="baze-header">ROOM TYPES</th>
+            <th class="baze-header">FULL OPTION</th>
+            <th class="baze-header">WITHOUT DINNER & LAUNDRY</th>
+            <th class="baze-header">ACCOMMODATION & SHUTTLE</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-label="ROOM TYPES">Room of 2</td>
+            <td data-label="FULL OPTION">900K</td>
+            <td data-label="WITHOUT DINNER & LAUNDRY">800K</td>
+            <td data-label="ACCOMMODATION & SHUTTLE">700K</td>
+        </tr>
+        <tr>
+            <td data-label="ROOM TYPES">Room of 1</td>
+            <td data-label="FULL OPTION">1.05M</td>
+            <td data-label="WITHOUT DINNER & LAUNDRY">950K</td>
+            <td data-label="ACCOMMODATION & SHUTTLE">850K</td>
+        </tr>
+        <tr>
+            <td data-label="ROOM TYPES">Room of 1 with private balcony</td>
+            <td data-label="FULL OPTION">1.1M</td>
+            <td data-label="WITHOUT DINNER & LAUNDRY">1M</td>
+            <td data-label="ACCOMMODATION & SHUTTLE">900K</td>
+        </tr>
+        <tr>
+            <td data-label="ROOM TYPES">Room of 2 with private kitchen</td>
+            <td data-label="FULL OPTION">1.0M</td>
+            <td data-label="WITHOUT DINNER & LAUNDRY">900K</td>
+            <td data-label="ACCOMMODATION & SHUTTLE">800K</td>
+        </tr>
+        <tr>
+            <td data-label="ROOM TYPES">Room of 1 with private kitchen</td>
+            <td data-label="FULL OPTION">1.3M</td>
+            <td data-label="WITHOUT DINNER & LAUNDRY">1.2M</td>
+            <td data-label="ACCOMMODATION & SHUTTLE">1.1M</td>
+        </tr>
+      </tbody>
+      </table>
+      <div class="table-title">Room rates per student/semester for Nile students - Male</div>
+      <div class="table-titli">Semester is 4 to 4.5 months</div>
+      <table>
+        <thead>
+          <tr>
+            <th class="nile-header">ROOM TYPES</th>
+            <th class="nile-header">FULL OPTION</th>
+            <th class="nile-header">WITHOUT DINNER & LAUNDRY</th>
+            <th class="nile-header">ACCOMMODATION & SHUTTLE</th>
+          </tr>
+        </thead>
     <tbody>
       <tr>
           <td data-label="ROOM TYPES">Room of 2</td>
@@ -442,7 +429,6 @@
       </tr>
     </tbody>
     </table>
-    
 </main>
 
     <style>
@@ -607,9 +593,16 @@
       background-color: #0056b3;
       color: #ffffff;
       font-weight: bold;
-      font-size: 13px; /* Larger font size for headers */
+      font-size: 13px; 
+  }
+ /* Unique styles for Baze and Nile table headers */
+ .baze-header {
+      background-color: #ff9900; /* Blue for Baze students */
   }
 
+  .nile-header {
+      background-color: #0056b3; /* Orange for Nile students */
+  }
   .table-title {
       text-align: center;
       font-size: 1.2em;
@@ -641,14 +634,22 @@
           border: none;
           border-bottom: 1px solid #ccc;
       }
-
+     
       th {
           background-color: #0056b3;
           color: #ffffff;
           font-weight: bold;
           font-size: 1.1em; /* Maintain header font size on small screens */
+          
       }
+ /* Unique styles for Baze and Nile table headers */
+ .baze-header {
+      background-color: #ff9900; /* Blue for Baze students */
+  }
 
+  .nile-header {
+      background-color: #0056b3; /* Orange for Nile students */
+  }
       td {
           position: relative;
           padding-left: 50%;
@@ -679,10 +680,10 @@
 <table>
   <thead>
     <tr>
-        <th>ROOM TYPES</th>
-        <th>FULL OPTION</th>
-        <th>WITHOUT DINNER & LAUNDRY</th>
-        <th>ACCOMMODATION & SHUTTLE</th>
+      <th class="baze-header">ROOM TYPES</th>
+      <th class="baze-header">FULL OPTION</th>
+      <th class="baze-header">WITHOUT DINNER & LAUNDRY</th>
+      <th class="baze-header">ACCOMMODATION & SHUTTLE</th>
     </tr>
   </thead>
   <tr>
@@ -721,14 +722,14 @@
 <div class="table-title">Room rates per student/semester for Nile students - Female</div>
 <div class="table-titli">Semester is 4 to 4.5 months</div>
 <table>
-<thead>
-  <tr>
-      <th>ROOM TYPES</th>
-      <th>FULL OPTION</th>
-      <th>WITHOUT DINNER & LAUNDRY</th>
-      <th>ACCOMMODATION & SHUTTLE</th>
-  </tr>
-</thead>
+  <thead>
+    <tr>
+      <th class="nile-header">ROOM TYPES</th>
+      <th class="nile-header">FULL OPTION</th>
+      <th class="nile-header">WITHOUT DINNER & LAUNDRY</th>
+      <th class="nile-header">ACCOMMODATION & SHUTTLE</th>
+    </tr>
+  </thead>
 <tbody>
   <tr>
     <td data-label="ROOM TYPES">Room of 6, Bunk Bed</td>
