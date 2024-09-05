@@ -43,7 +43,7 @@
       th, td {
           padding: 1px 1px;
           border: 1px solid #55555500; /* Darker border */
-          color: white; /* White text */
+          color: rgb(0, 0, 0); /* White text */
       }
   
       th {
@@ -59,7 +59,13 @@
           margin-bottom: 1px;
           color: #f0f8ff; /* Light color for title */
       }
-  
+      .baze-header {
+      background-color: #ff9900; /* Blue for Baze students */
+  }
+
+  .nile-header {
+      background-color: #0056b3; /* Orange for Nile students */
+  }
       .link-a {
           animation: blink 0.8s infinite;
           text-decoration: none;
@@ -82,8 +88,7 @@
           opacity: 1;
           visibility: visible;
       }
-</style>
-  <style>
+
     #main {
   padding-top: 200px; /* Adjust the value as needed */
 }
@@ -127,6 +132,80 @@
         </a>
       </div>
     </div>
+  </nav><!-- End Header/Navbar --> <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img style="width: 80px;height: 50px; border-radius: 5px;" src="assets/img/logo.3f7a3e0b.png" alt="RBK Logo">
+    </a>
+    
+
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="property-grid.html">All Rooms</a>
+          </li>
+
+          
+        </ul>
+      </div>
+
+      <div class="call-room mt-3" style="margin: 5px;">
+        <a href="tel:+234 905 835 0009" class="btn btn-primary btn-lg">
+          <i class="bi bi-telephone"></i>
+        </a>
+      </div>
+    </div>
+  </nav><!-- End Header/Navbar --> <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img style="width: 70px;height: 50px; border-radius: 5px;" src="assets/img/logo.3f7a3e0b.png" alt="RBK Logo">
+    </a>
+    
+
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="property-grid.html">All Rooms</a>
+          </li>
+
+          
+        </ul>
+      </div>
+
+      <div class="call-room mt-3" style="margin: 5px;">
+        <a href="tel:+234 905 835 0009" class="btn btn-primary btn-lg">
+          <i class="bi bi-telephone"></i>
+        </a>
+      </div>
+    </div>
   </nav><!-- End Header/Navbar -->
 
   <main id="main">
@@ -153,20 +232,7 @@
         </div>
       </div>
     </section>
-
-    <style>
-      @keyframes blink {
-          0% { color: #208bff; }
-          50% { color: rgb(255, 255, 255); }
-          100% { color: #208bff; }
-      }
-      .link-a {
-          animation: blink 0.8s infinite;
-          text-decoration: none;
-      }
-    </style>
-
-   <div id="property-carousel" class="swiper">
+    <div id="property-carousel" class="swiper">
       <div class="swiper-wrapper">
         <!-- First carousel item -->
         <div class="carousel-item-b swiper-slide">
@@ -276,63 +342,64 @@
       </div>
       <div class="propery-carousel-pagination carousel-pagination"></div>
     </div>
+    <body>
 
+     
       <div class="table-title">Room rates per student/trimester for Baze students - Male</div>
       <div class="table-titli">Trimester is 3 to 3.5 months</div>
-    <table>
-    <thead>
-      <tr>
-          <th>ROOM TYPES</th>
-          <th>FULL OPTION</th>
-          <th>WITHOUT DINNER & LAUNDRY</th>
-          <th>ACCOMMODATION & SHUTTLE</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-          <td data-label="ROOM TYPES">Room of 2</td>
-          <td data-label="FULL OPTION">900K</td>
-          <td data-label="WITHOUT DINNER & LAUNDRY">800K</td>
-          <td data-label="ACCOMMODATION & SHUTTLE">700K</td>
-      </tr>
-      <tr>
-          <td data-label="ROOM TYPES">Room of 1</td>
-          <td data-label="FULL OPTION">1.05M</td>
-          <td data-label="WITHOUT DINNER & LAUNDRY">950K</td>
-          <td data-label="ACCOMMODATION & SHUTTLE">850K</td>
-      </tr>
-      <tr>
-          <td data-label="ROOM TYPES">Room of 1 with private balcony</td>
-          <td data-label="FULL OPTION">1.1M</td>
-          <td data-label="WITHOUT DINNER & LAUNDRY">1M</td>
-          <td data-label="ACCOMMODATION & SHUTTLE">900K</td>
-      </tr>
-      <tr>
-          <td data-label="ROOM TYPES">Room of 2 with private kitchen</td>
-          <td data-label="FULL OPTION">1.0M</td>
-          <td data-label="WITHOUT DINNER & LAUNDRY">900K</td>
-          <td data-label="ACCOMMODATION & SHUTTLE">800K</td>
-      </tr>
-      <tr>
-          <td data-label="ROOM TYPES">Room of 1 with private kitchen</td>
-          <td data-label="FULL OPTION">1.3M</td>
-          <td data-label="WITHOUT DINNER & LAUNDRY">1.2M</td>
-          <td data-label="ACCOMMODATION & SHUTTLE">1.1M</td>
-      </tr>
-    </tbody>
-    </table>
-    
-    <div class="table-title">Room rates per student/semester for Nile students - Male</div>
-    <div class="table-titli">Semester is 4 to 4.5 months</div>
-    <table>
-    <thead>
-      <tr>
-          <th>ROOM TYPES</th>
-          <th>FULL OPTION</th>
-          <th>WITHOUT DINNER & LAUNDRY</th>
-          <th>ACCOMMODATION & SHUTTLE</th>
-      </tr>
-    </thead>
+      <table>
+        <thead>
+          <tr>
+            <th class="baze-header">ROOM TYPES</th>
+            <th class="baze-header">FULL OPTION</th>
+            <th class="baze-header">WITHOUT DINNER & LAUNDRY</th>
+            <th class="baze-header">ACCOMMODATION & SHUTTLE</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-label="ROOM TYPES">Room of 2</td>
+            <td data-label="FULL OPTION">900K</td>
+            <td data-label="WITHOUT DINNER & LAUNDRY">800K</td>
+            <td data-label="ACCOMMODATION & SHUTTLE">700K</td>
+        </tr>
+        <tr>
+            <td data-label="ROOM TYPES">Room of 1</td>
+            <td data-label="FULL OPTION">1.05M</td>
+            <td data-label="WITHOUT DINNER & LAUNDRY">950K</td>
+            <td data-label="ACCOMMODATION & SHUTTLE">850K</td>
+        </tr>
+        <tr>
+            <td data-label="ROOM TYPES">Room of 1 with private balcony</td>
+            <td data-label="FULL OPTION">1.1M</td>
+            <td data-label="WITHOUT DINNER & LAUNDRY">1M</td>
+            <td data-label="ACCOMMODATION & SHUTTLE">900K</td>
+        </tr>
+        <tr>
+            <td data-label="ROOM TYPES">Room of 2 with private kitchen</td>
+            <td data-label="FULL OPTION">1.0M</td>
+            <td data-label="WITHOUT DINNER & LAUNDRY">900K</td>
+            <td data-label="ACCOMMODATION & SHUTTLE">800K</td>
+        </tr>
+        <tr>
+            <td data-label="ROOM TYPES">Room of 1 with private kitchen</td>
+            <td data-label="FULL OPTION">1.3M</td>
+            <td data-label="WITHOUT DINNER & LAUNDRY">1.2M</td>
+            <td data-label="ACCOMMODATION & SHUTTLE">1.1M</td>
+        </tr>
+      </tbody>
+      </table>
+      <div class="table-title">Room rates per student/semester for Nile students - Male</div>
+      <div class="table-titli">Semester is 4 to 4.5 months</div>
+      <table>
+        <thead>
+          <tr>
+            <th class="nile-header">ROOM TYPES</th>
+            <th class="nile-header">FULL OPTION</th>
+            <th class="nile-header">WITHOUT DINNER & LAUNDRY</th>
+            <th class="nile-header">ACCOMMODATION & SHUTTLE</th>
+          </tr>
+        </thead>
     <tbody>
       <tr>
           <td data-label="ROOM TYPES">Room of 2</td>
@@ -366,7 +433,6 @@
       </tr>
     </tbody>
     </table>
-    
 </main>
 
     <style>
@@ -387,7 +453,7 @@
     </style>
     
     </section><!-- End Latest Properties Section -->
-
+    <main id="main">
     <section class="section-property section-t8">
       <div class="container">
         <div class="row">
@@ -421,7 +487,7 @@
             <div class="card-overlay-a-content">
               <div class="card-header-a">
                 <h2 class="card-title-a">
-                  <a href="https://wa.link/so1gur"> Room of 6 Bunk Bed
+                  <a href="https://wa.link/so1gur"> Room of 6 
                     <br>
                     <a href="https://wa.link/so1gur" class="book-now-btn">Book Now</a>
                 </h2>
@@ -440,7 +506,7 @@
             <div class="card-overlay-a-content">
               <div class="card-header-a">
                 <h2 class="card-title-a">
-                  <a href="https://wa.link/by3tzx">Room of 4 Bunk Bed
+                  <a href="https://wa.link/by3tzx">Room of 4 
                     <br>
                     <a href="https://wa.link/by3tzx" class="book-now-btn">Book Now</a>
                 </h2>
@@ -507,10 +573,11 @@
           </div>
         </div>
       </div><!-- End carousel item -->
-
-    </div>
+     
+    </div> 
+      <div class="propery-carousel-pagination carousel-pagination"></div>
 </div>
-<div class="propery-carousel-pagination carousel-pagination"></div>
+
 
 <style>
   /* General Table Styling */
@@ -523,7 +590,6 @@
   th, td {
       border: 1px solid #ccc;
       padding: px;
-      color: #000000;
       text-align: center;
       font-size: 15px; /* Adjusted font size for better readability */
   }
@@ -532,9 +598,16 @@
       background-color: #0056b3;
       color: #ffffff;
       font-weight: bold;
-      font-size: 13px; /* Larger font size for headers */
+      font-size: 13px; 
+  }
+ /* Unique styles for Baze and Nile table headers */
+ .baze-header {
+      background-color: #ff9900; /* Blue for Baze students */
   }
 
+  .nile-header {
+      background-color: #0056b3; /* Orange for Nile students */
+  }
   .table-title {
       text-align: center;
       font-size: 1.2em;
@@ -566,14 +639,22 @@
           border: none;
           border-bottom: 1px solid #ccc;
       }
-
+     
       th {
           background-color: #0056b3;
-          color: #131010;
+          color: #ffffff;
           font-weight: bold;
           font-size: 1.1em; /* Maintain header font size on small screens */
+          
       }
+ /* Unique styles for Baze and Nile table headers */
+ .baze-header {
+      background-color: #ff9900; /* Blue for Baze students */
+  }
 
+  .nile-header {
+      background-color: #0056b3; /* Orange for Nile students */
+  }
       td {
           position: relative;
           padding-left: 50%;
@@ -604,20 +685,20 @@
 <table>
   <thead>
     <tr>
-        <th>ROOM TYPES</th>
-        <th>FULL OPTION</th>
-        <th>WITHOUT DINNER & LAUNDRY</th>
-        <th>ACCOMMODATION & SHUTTLE</th>
+      <th class="baze-header">ROOM TYPES</th>
+      <th class="baze-header">FULL OPTION</th>
+      <th class="baze-header">WITHOUT DINNER & LAUNDRY</th>
+      <th class="baze-header">ACCOMMODATION & SHUTTLE</th>
     </tr>
   </thead>
   <tr>
-    <td data-label="ROOM TYPES">Room of 6, Bunk Bed</td>
+    <td data-label="ROOM TYPES">Room of 6, </td>
     <td data-label="FULL OPTION">800K</td>
     <td data-label="WITHOUT DINNER & LAUNDRY">700K</td>
     <td data-label="ACCOMMODATION & SHUTTLE">500K</td>
 </tr>
 <tr>
-    <td data-label="ROOM TYPES">Room of 4, Bunk Bed</td>
+    <td data-label="ROOM TYPES">Room of 4, </td>
     <td data-label="FULL OPTION">900K</td>
     <td data-label="WITHOUT DINNER & LAUNDRY">800K</td>
     <td data-label="ACCOMMODATION & SHUTTLE">700K</td>
@@ -646,23 +727,23 @@
 <div class="table-title">Room rates per student/semester for Nile students - Female</div>
 <div class="table-titli">Semester is 4 to 4.5 months</div>
 <table>
-<thead>
-  <tr>
-      <th>ROOM TYPES</th>
-      <th>FULL OPTION</th>
-      <th>WITHOUT DINNER & LAUNDRY</th>
-      <th>ACCOMMODATION & SHUTTLE</th>
-  </tr>
-</thead>
+  <thead>
+    <tr>
+      <th class="nile-header">ROOM TYPES</th>
+      <th class="nile-header">FULL OPTION</th>
+      <th class="nile-header">WITHOUT DINNER & LAUNDRY</th>
+      <th class="nile-header">ACCOMMODATION & SHUTTLE</th>
+    </tr>
+  </thead>
 <tbody>
   <tr>
-    <td data-label="ROOM TYPES">Room of 6, Bunk Bed</td>
+    <td data-label="ROOM TYPES">Room of 6, </td>
     <td data-label="FULL OPTION">1M</td>
     <td data-label="WITHOUT DINNER & LAUNDRY">800K</td>
     <td data-label="ACCOMMODATION & SHUTTLE">500K</td>
 </tr>
 <tr>
-    <td data-label="ROOM TYPES">Room of 4, Bunk Bed</td>
+    <td data-label="ROOM TYPES">Room of 4, </td>
     <td data-label="FULL OPTION">1.1M</td>
     <td data-label="WITHOUT DINNER & LAUNDRY">900K</td>
     <td data-label="ACCOMMODATION & SHUTTLE">700K</td>
@@ -693,9 +774,25 @@
 </body>
 </html>
 
-</table>
-    <!-- ======= Latest News Section ======= -->
-       <div id="news-carousel" class="swiper">
+
+    <section class="section-news section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Our Gallery</h2>
+              </div>
+              <div class="title-link">
+                <a href="blog-grid.html">
+          
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="news-carousel" class="swiper">
           <div class="swiper-wrapper">
 
             <div class="carousel-item-c swiper-slide">
@@ -773,9 +870,6 @@
             </div><!-- End carousel item -->
           </div>
         </div>
-
-        <div style="padding: 20px;" class="news-carousel-pagination carousel-pagination"></div>
-      </div>
    
   </main><!-- End #main -->
   <!-- ======= Footer ======= -->
@@ -830,28 +924,24 @@
                     </ul>
                 </nav>
                 <div class="socials-a text-center">
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="bi bi-facebook" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="bi bi-twitter" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="bi bi-instagram" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="bi bi-linkedin" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://m.facebook.com/100067971739111/">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://m.youtube.com/channel/UCT7R-IVNn05nMUaHKQuU28w">
+                            <i class="bi bi-youtube" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/rkbstudentaccommodation/?hl=en">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
                 </div>
                 <div class="copyright-footer text-center">
                     <p class="copyright">
