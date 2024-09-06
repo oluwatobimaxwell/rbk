@@ -1179,6 +1179,21 @@ a:hover {
     padding-top: 9rem;
   }
 }
+.icon-size {
+  font-size: 24px !important; /* Adjust the size */
+  width: 24px; /* Optional: add width to control the bounding box */
+  height: 24px; /* Optional: add height to control the bounding box */
+}
+.logo-size {
+  width: 80px !important; /* Adjust the width */
+  height: 50px !important; /* Adjust the height */
+  border-radius: 5px; /* Optional: Keeps the rounded corners */
+  margin-left: -10px; /* Moves the logo 10px to the left */
+  /* Or use position */
+  position: relative;
+  left: -10px; /* Moves the logo 10px to the left */
+}
+
 
 .intro-single .title-single-box {
   padding: 1rem 0 1rem 2rem;
@@ -1189,7 +1204,7 @@ a:hover {
 }
 
 .intro-single .title-single-box .title-single {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.2rem;
 }
 
